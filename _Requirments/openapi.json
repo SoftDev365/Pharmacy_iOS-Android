@@ -1,0 +1,472 @@
+{
+ "swagger": "2.0",
+ "info": {
+  "version": "1.0.0",
+  "title": "pharmacy-165422.appspot.com"
+ },
+ "host": "pharmacy-165422.appspot.com",
+ "basePath": "/_ah/api",
+ "schemes": [
+  "https"
+ ],
+ "consumes": [
+  "application/json"
+ ],
+ "produces": [
+  "application/json"
+ ],
+ "paths": {
+  "/myApi/v1/addItem/{apiver}/{uuid}/{brand}/{description}/{expiry}/{price}/{quantity}": {
+   "post": {
+    "operationId": "MyApiAddItem",
+    "parameters": [
+     {
+      "name": "apiver",
+      "in": "path",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+     },
+     {
+      "name": "uuid",
+      "in": "path",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "name": "brand",
+      "in": "path",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "name": "description",
+      "in": "path",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "name": "expiry",
+      "in": "path",
+      "required": true,
+      "type": "integer",
+      "format": "int64"
+     },
+     {
+      "name": "price",
+      "in": "path",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+     },
+     {
+      "name": "quantity",
+      "in": "path",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "A successful response",
+      "schema": {
+       "$ref": "#/definitions/SuccessWrapper"
+      }
+     }
+    }
+   }
+  },
+  "/myApi/v1/connectWithStripe/{apiver}/{code}": {
+   "post": {
+    "operationId": "MyApiConnectWithStripe",
+    "parameters": [
+     {
+      "name": "apiver",
+      "in": "path",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+     },
+     {
+      "name": "code",
+      "in": "path",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "A successful response",
+      "schema": {
+       "$ref": "#/definitions/SuccessWrapper"
+      }
+     }
+    }
+   }
+  },
+  "/myApi/v1/editItem/{apiver}/{itemId}": {
+   "post": {
+    "operationId": "MyApiEditItem",
+    "parameters": [
+     {
+      "name": "apiver",
+      "in": "path",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+     },
+     {
+      "name": "itemId",
+      "in": "path",
+      "required": true,
+      "type": "integer",
+      "format": "int64"
+     },
+     {
+      "name": "brand",
+      "in": "query",
+      "required": false,
+      "type": "string"
+     },
+     {
+      "name": "description",
+      "in": "query",
+      "required": false,
+      "type": "string"
+     },
+     {
+      "name": "expiry",
+      "in": "query",
+      "required": false,
+      "type": "integer",
+      "format": "int64"
+     },
+     {
+      "name": "price",
+      "in": "query",
+      "required": false,
+      "type": "integer",
+      "format": "int32"
+     },
+     {
+      "name": "quantity",
+      "in": "query",
+      "required": false,
+      "type": "string"
+     },
+     {
+      "name": "dispatchDate",
+      "in": "query",
+      "required": false,
+      "type": "integer",
+      "format": "int64"
+     },
+     {
+      "name": "estDeliveryDate",
+      "in": "query",
+      "required": false,
+      "type": "integer",
+      "format": "int64"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "A successful response",
+      "schema": {
+       "$ref": "#/definitions/SuccessWrapper"
+      }
+     }
+    }
+   }
+  },
+  "/myApi/v1/purchaseItem/{apiver}/{itemId}/{saveCardDetails}": {
+   "post": {
+    "operationId": "MyApiPurchaseItem",
+    "parameters": [
+     {
+      "name": "apiver",
+      "in": "path",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+     },
+     {
+      "name": "itemId",
+      "in": "path",
+      "required": true,
+      "type": "integer",
+      "format": "int64"
+     },
+     {
+      "name": "saveCardDetails",
+      "in": "path",
+      "required": true,
+      "type": "boolean"
+     },
+     {
+      "name": "buyerAcctToken",
+      "in": "query",
+      "required": false,
+      "type": "string"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "A successful response",
+      "schema": {
+       "$ref": "#/definitions/SuccessWrapper"
+      }
+     }
+    }
+   }
+  },
+  "/myApi/v1/requestPhoneCall/{pharmNo}": {
+   "get": {
+    "operationId": "MyApiRequestPhoneCall",
+    "parameters": [
+     {
+      "name": "pharmNo",
+      "in": "path",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "A successful response",
+      "schema": {
+       "$ref": "#/definitions/SuccessWrapper"
+      }
+     }
+    }
+   }
+  },
+  "/myApi/v1/sqlgetitemcollection/{apiver}/{maxItemID}/{expiryStart}/{expiryEnd}/{priceH}/{priceL}/{limit}": {
+   "get": {
+    "operationId": "MyApiGetItems",
+    "parameters": [
+     {
+      "name": "apiver",
+      "in": "path",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+     },
+     {
+      "name": "maxItemID",
+      "in": "path",
+      "required": true,
+      "type": "integer",
+      "format": "int64"
+     },
+     {
+      "name": "expiryStart",
+      "in": "path",
+      "required": true,
+      "type": "integer",
+      "format": "int64"
+     },
+     {
+      "name": "expiryEnd",
+      "in": "path",
+      "required": true,
+      "type": "integer",
+      "format": "int64"
+     },
+     {
+      "name": "priceH",
+      "in": "path",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+     },
+     {
+      "name": "priceL",
+      "in": "path",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+     },
+     {
+      "name": "limit",
+      "in": "path",
+      "required": true,
+      "type": "integer",
+      "format": "int32"
+     },
+     {
+      "name": "search",
+      "in": "query",
+      "required": false,
+      "type": "string"
+     },
+     {
+      "name": "quantity",
+      "in": "query",
+      "required": false,
+      "type": "string"
+     },
+     {
+      "name": "buyerID",
+      "in": "query",
+      "required": false,
+      "type": "string"
+     },
+     {
+      "name": "sellerID",
+      "in": "query",
+      "required": false,
+      "type": "string"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "A successful response",
+      "schema": {
+       "$ref": "#/definitions/SQLGetItemCollection"
+      }
+     }
+    }
+   }
+  },
+  "/myApi/v1/successwrapper/{pharmNo}": {
+   "get": {
+    "operationId": "MyApiGetPhoneNo",
+    "parameters": [
+     {
+      "name": "pharmNo",
+      "in": "path",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "A successful response",
+      "schema": {
+       "$ref": "#/definitions/SuccessWrapper"
+      }
+     }
+    }
+   }
+  },
+  "/myApi/v1/verifyPhoneCode/{pharmNo}/{phoneCode}": {
+   "get": {
+    "operationId": "MyApiVerifyPhoneCode",
+    "parameters": [
+     {
+      "name": "pharmNo",
+      "in": "path",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "name": "phoneCode",
+      "in": "path",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "A successful response",
+      "schema": {
+       "$ref": "#/definitions/SuccessWrapper"
+      }
+     }
+    }
+   }
+  }
+ },
+ "securityDefinitions": {
+  "firebase": {
+   "type": "oauth2",
+   "authorizationUrl": "",
+   "flow": "implicit",
+   "x-google-issuer": "https://securetoken.google.com/pharmacy-165422",
+   "x-google-jwks_uri": "https://www.googleapis.com/service_accounts/v1/metadata/x509/securetoken@system.gserviceaccount.com"
+  }
+ },
+ "definitions": {
+  "SQLGetItem": {
+   "properties": {
+    "brand": {
+     "type": "string"
+    },
+    "buyerId": {
+     "type": "string"
+    },
+    "description": {
+     "type": "string"
+    },
+    "dispatchDate": {
+     "type": "integer",
+     "format": "int64"
+    },
+    "estDeliveryDate": {
+     "type": "integer",
+     "format": "int64"
+    },
+    "expiryDateTime": {
+     "type": "integer",
+     "format": "int64"
+    },
+    "itemId": {
+     "type": "integer",
+     "format": "int64"
+    },
+    "itemUUID": {
+     "type": "string"
+    },
+    "lastEdited": {
+     "type": "integer",
+     "format": "int64"
+    },
+    "price": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "purchaseDate": {
+     "type": "integer",
+     "format": "int64"
+    },
+    "quantity": {
+     "type": "string"
+    },
+    "reason": {
+     "type": "string"
+    },
+    "sellerId": {
+     "type": "string"
+    },
+    "success": {
+     "type": "boolean"
+    },
+    "uploadDate": {
+     "type": "integer",
+     "format": "int64"
+    }
+   }
+  },
+  "SQLGetItemCollection": {
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "#/definitions/SQLGetItem"
+     }
+    }
+   }
+  },
+  "SuccessWrapper": {
+   "properties": {
+    "reason": {
+     "type": "string"
+    },
+    "successful": {
+     "type": "boolean"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,51 @@
+// Medechine Project
+https://www.freelancer.com/projects/mobile-phone/iPhone-Application-for-Pharmacies-fix/
+
+
+https://github.com/UwaisA/PharmacyIOS
+https://apis-explorer.appspot.com/apis-explorer/?base=https://pharmacy-165422.appspot.com/_ah/api#p/discovery/v1/discovery.apis.getRest
+
+//ALL APIS
+https://apis-explorer.appspot.com/apis-explorer/?base=https://pharmacy-165422.appspot.com/_ah/api#p/myApi/v1/
+
+username: uwaisash@gmail.com
+password: Testing123
+
+firebase Access:
+https://console.firebase.google.com/u/0/project/pharmacy-165422/database/data
+
+
+1. I'll add the app, there is no need for me to share my google account
+openapi.json
+
+2. here is the firebase config file
+google.info
+
+3. bundle
+"com.zavvytech.Pharmacy"
+
+4. Here is a JSON of the whole database currently
+"pharmacy-165422-export.json"
+
+5. The storage for product images is stored in firebase as well in the following structure
+/items/{userID}/{item-UUID}/batch.jpg, /items/{userID}/{item-UUID}/brand.jpg and /items/{userID}/{item-UUID}/expiry.jpg
+
+6. batch.jpg, brand.jpg and expiry.jpg are the 3 images that need to go into storage. They should be 300x300
+
+7. this is firebase database
+"Capture.PNG"
+
+8.  I'm done checking that my alpha apk has no secret information (private API keys/passwords etc) in it. Here it is. Feel free to install it.
+"2.apk"
+You won't be able to make a verified account so you won't be able to use the app fully UwaisA
+ For testing purposes you can use Email: "uwaisash@gmail.com" Password: "Testing123"
+
+9. Stripe
+Also on the purchase screen - you should use the stripe card details UI element from this picture UwaisA
+
+Capture.PNG
+ it is available from the stripe library here: https://stripe.com/docs/mobile/ios
+ if you use this UI element it will do some validation and animation for you which makes it easy to use
+ and you can then get a token to use with the google app engine server
+ If you can add firebase and stripe then that will be a good start for day 1 of APIs part
+ I will talk to you soon

@@ -1,0 +1,46 @@
+{
+  "readOnlyUserIDs" : {
+    "9U8U28xcK6hMbsO2lku0pQFXMML2" : {
+      "customerID" : "cus_XXXXXXXXXX",
+      "stripeAccountID" : "acct_XXXXXXXXX",
+      "verified" : false
+    },
+    "WZOwg8wHL5S9cy2xSdI2kKp9Zj02" : {
+      "customerID" : "cus_XXXXXXXXXX",
+      "verified" : true
+    },
+    "Y2sa5CIUz6QVGZ1SDRVnPP0nUNj1" : {
+      "verified" : true
+    }
+  },
+  "userIDs" : {
+    "9U8U28xcK6hMbsO2lku0pQFXMML2" : {
+      "address1" : "Address 1",
+      "address2" : "",
+      "address3" : "",
+      "county" : "London",
+      "email" : "uwaisash@gmail.com",
+      "ownerName" : "Uwais Ashraf",
+      "pharmNo" : "0000000",
+      "phoneNo" : "07812371901",
+      "postcode" : "P057 0D3",
+      "town" : "",
+      "tradingName" : "Uwais Shop",
+      "userId" : "9U8U28xcK6hMbsO2lku0pQFXMML2"
+    },
+    "WZOwg8wHL5S9cy2xSdI2kKp9Zj02" : {
+      "address1" : "6 Eve's Corner",
+      "address2" : "Danbury",
+      "address3" : "",
+      "county" : "Essex",
+      "email" : "support@zavvytech.co.uk",
+      "ownerName" : "Boots UK Limited",
+      "pharmNo" : "1031072",
+      "phoneNo" : "01245223150",
+      "postcode" : "CM34QF",
+      "town" : "CHELMSFORD",
+      "tradingName" : "Boots",
+      "userId" : "WZOwg8wHL5S9cy2xSdI2kKp9Zj02"
+    }
+  }
+}

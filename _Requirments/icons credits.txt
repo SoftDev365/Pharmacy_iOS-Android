@@ -1,0 +1,18 @@
+https://icons8.com/icon/5543/Pill - Pill icon
+https://icons8.com/icon/7776/In-Transit-Filled - Van transit
+https://icons8.com/icon/9341/truck-filled - Van stationary
+https://icons8.com/icon/8286/Box-Filled - Box filled (quantity icon)
+https://icons8.com/icon/6944/British-Pound - pound sign (price)
+https://material.io/icons/#ic_add_circle - Plus icon with circle
+https://material.io/icons/#ic_add - Plus icon
+https://material.io/icons/#ic_branding_watermark - Brand icon
+https://material.io/icons/#ic_check - Tick icon
+https://material.io/icons/#ic_date_range - Expiry date icon
+https://material.io/icons/#ic_description - Description icon
+https://material.io/icons/#ic_home - Address icon
+https://material.io/icons/#ic_phone - Phone icon
+https://material.io/icons/#ic_report - Report item icon
+https://material.io/icons/#ic_search - Search icon
+https://material.io/icons/#ic_rotate_right - Rotate image right
+https://material.io/icons/#ic_shopping_cart - Purchase item
+https://stripe.com/img/about/logos/zips/blue-on-light.zip - Connect with Stripe icon
